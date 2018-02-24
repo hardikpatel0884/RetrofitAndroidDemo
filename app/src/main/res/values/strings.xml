@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Retrofit</string>
+    <string name="host">http://192.168.200.51:3000/</string>
+</resources>

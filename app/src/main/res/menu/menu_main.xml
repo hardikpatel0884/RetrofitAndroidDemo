@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_logout" android:title="Logout"></item>
+    <item android:id="@+id/action_task" android:title="Task"></item>
+    <group>
+        <item android:title="Upload">
+            <menu>
+                <item android:title="Video" android:id="@+id/action_video"></item>
+                <item android:title="Image" android:id="@+id/action_image"></item>
+            </menu>
+        </item>
+    </group>
+</menu>

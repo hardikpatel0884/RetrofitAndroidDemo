@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- swipe option layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:text="Show"
+                android:gravity="center_vertical|right"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="#5d9943"
+                android:drawableLeft="@drawable/ic_eye"
+                android:drawableTint="@android:color/white"
+                android:drawablePadding="5dp"
+                android:id="@+id/tv_show"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:gravity="center_vertical|right"
+                android:textAlignment="textEnd"
+                android:text="Delete"
+                android:drawableRight="@drawable/ic_delete"
+                android:drawableTint="@android:color/white"
+                android:textSize="18sp"
+                android:background="#d8b64048"
+                android:textColor="@android:color/white"
+                android:drawablePadding="5dp"
+                android:id="@+id/tv_delete"/>
+
+        </LinearLayout>
+
+        <!-- detail option view -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/cardview_light_background"
+            android:padding="10dp"
+            android:id="@+id/ll_show_detail">
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:src="@drawable/ic_close" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="13dp"
+                android:textColor="@android:color/black"
+                android:text="Hardik"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:background="#333"></View>
+
+</LinearLayout>
